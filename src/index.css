@@ -1,0 +1,90 @@
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100%;
+    min-height: 100vh;
+    font-size: 62.5%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(rgba(20, 20, 20, 0.689), rgba(96, 96, 96, 0.306)), url('./assets/brick-wall.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 3rem 0;
+    padding-left: 3rem;
+}
+.form-control{
+    width: 30rem;
+    min-height: 20rem;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#sticky{
+    width: 100%;
+    height: 20rem;
+    border: none;
+    outline: none;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+.btn-add{
+    border: none;
+    outline: none;
+    background: yellow;
+    padding: 1rem;
+text-transform: uppercase;
+font-size: 1.2rem;
+}
+.btn-add:hover{
+    background: rgb(205, 205, 48);
+    color: rgba(0, 0, 0, 0.562);
+}
+
+.note{
+    position: absolute;
+    top: 3rem;
+    left: 40rem;
+    background: url('./assets/post-it-note.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30rem;
+    height: 30rem;
+
+}
+.close{
+    position: relative;
+    top: -7rem;
+    left: 26rem;
+    color: red;
+    font-size: 2rem;
+}
+.text{
+    padding: 4rem 3rem;
+    font-size: 1.6rem;
+}
+.created{
+    color: #fff;
+    font-size: 1.3rem;
+    padding-bottom: 3rem;
+}
+h1{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width :800px) {
+   .note{
+    position: absolute;
+    top: 40rem;
+    left: 3rem;
+   } 
+}
